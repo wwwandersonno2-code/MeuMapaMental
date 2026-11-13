@@ -1,0 +1,21 @@
+MeuMapaMental 0.2 — Projeto para GitHub Actions
+
+Inclui: biblioteca de mapas, notas, comentários, anexos locais via IndexedDB,
+conexões entre tópicos, edição e exclusão de informações, indicadores nos tópicos.
+
+INSTALAÇÃO NO GITHUB:
+1. Extraia o ZIP no computador.
+2. No repositório GitHub, substitua o conteúdo da pasta MeuMapaMental
+   pelos arquivos da pasta MeuMapaMental deste ZIP.
+3. Substitua o arquivo .github/workflows/android-apk.yml pelo deste ZIP.
+4. Confirme as alterações (commit).
+5. Actions > Gerar APK Android > Run workflow.
+6. Após sucesso, baixe o artefato MeuMapaMental-APK-v0.2 e extraia o APK.
+
+IMPORTANTE:
+- A biblioteca migra automaticamente o mapa salvo pela versão 0.1,
+  desde que o app mantenha o mesmo ID e os dados não sejam apagados.
+- Faça backup do mapa atual em JSON antes de instalar uma atualização.
+- Os anexos são guardados localmente no aparelho e NAO entram no JSON exportado.
+  Desinstalar o aplicativo ou limpar dados pode apagar anexos e mapas.
+- O APK não foi compilado neste ambiente. A compilação será feita pelo GitHub Actions.
