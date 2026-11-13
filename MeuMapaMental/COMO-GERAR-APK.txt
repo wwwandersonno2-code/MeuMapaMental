@@ -1,0 +1,8 @@
+GERAR APK SEM PROGRAMAR (GitHub Actions)
+1. Entre em github.com e crie uma conta gratuita, se necessário.
+2. Crie um repositório PRIVADO chamado MeuMapaMental.
+3. Envie para esse repositório o CONTEÚDO da pasta MeuMapaMental (incluindo a pasta oculta .github). Se o site não aceitar pastas, extraia o ZIP no computador e use a opção de upload de arquivos ou o GitHub Desktop para enviar a pasta inteira.
+4. Abra a aba Actions do repositório, escolha 'Gerar APK Android' e clique em Run workflow.
+5. Aguarde a compilação. Quando terminar, abra a execução e baixe o artefato 'MeuMapaMental-APK'.
+6. Extraia o ZIP baixado. Copie app-debug.apk para o celular Android e abra para instalar. O Android pode solicitar permissão para instalar apps dessa origem.
+Observação: não foi possível compilar/testar o APK neste ambiente. O APK gerado é de depuração para uso pessoal, não uma versão de publicação. O projeto usa Android WebView para executar a interface HTML offline.
