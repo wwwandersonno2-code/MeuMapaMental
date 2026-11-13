@@ -23,11 +23,11 @@ jobs:
       - name: Instalar Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: '8.7'
+          gradle-version: '8.9'
 
       - name: Compilar aplicativo
         working-directory: MeuMapaMental
-        run: gradle assembleDebug --stacktrace
+        run: gradle --version && gradle assembleDebug --stacktrace
 
       - name: Disponibilizar APK
         uses: actions/upload-artifact@v4
